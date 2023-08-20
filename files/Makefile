@@ -13,7 +13,7 @@ down:
 	docker compose down --remove-orphans
 
 test: up
-	. scripts/test.sh
+	bash scripts/test.sh
 
 docs: up
-	. scripts/preview_docs.sh
+	bash scripts/preview_docs.sh

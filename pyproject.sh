@@ -72,11 +72,11 @@ sed "s/project_name/$project_name/g" \
 
 # format
 sed "s/project_name/$project_name/g" \
-    $project_name/scripts/format.sh > $project_name/scripts/format.sh
+    $path_config/format.sh > $project_name/scripts/format.sh
 
 # tests
 sed "s/project_name/$project_name/g" \
-    $project_name/scripts/test.sh > $project_name/scripts/test.sh
+    $path_config/test.sh > $project_name/scripts/test.sh
 
 # Git
 cd $project_name && git init &> /dev/null && \

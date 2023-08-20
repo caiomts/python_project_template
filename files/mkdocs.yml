@@ -1,0 +1,53 @@
+site_name: project_name
+repo_url: "http://....github.io/project_name"
+repo_name: .../project_name
+edit_uri: edit/master/docs/
+
+nav:
+  - "Home": 
+
+
+theme:
+  features:
+  name: material
+  logo:
+  favicon:
+  palette:
+    - scheme: default
+      primary:
+      accent:
+      toggle:
+        icon:
+        name:
+
+    - scheme:
+      primary:
+      accent:
+      toggle:
+        icon:
+        name:
+
+  features:
+
+
+markdown_extensions:
+
+
+plugins:
+
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/...
+      name: github.com/...
+
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/.../
+      name: in/.../
+
+    - icon: material/web
+      link: https://....github.io/
+      name: ....github.io
+
+extra_css:

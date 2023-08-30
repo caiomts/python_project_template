@@ -56,6 +56,7 @@ cp $path_config/docker-compose.yml $project_name
 cp $path_config/.flake8 $project_name
 cp $path_config/Makefile $project_name
 cp $path_config/*.sh $project_name/scripts
+cp $path_config/*.yml $project_name/.github/workflows
 
 
 # pyproject.toml

@@ -49,7 +49,10 @@ The next time you use the template, only the fourth step is needed.
 │   │   └── ...  
 │   └── ...  
 ├── .github  
-│   └── workflows  
+│   └── workflows   
+│       ├── `publish_docs.yml`     
+│       ├── `publish_pypi.yml`  
+│       ├── `test_suite.yml`     
 ├── `.gitignore`    
 ├── `Dockerfile`    
 ├── `LICENSE`    
@@ -93,6 +96,4 @@ I use the GitHub [“Scripts to Rule Them All”](https://github.blog/2015-06-30
 ### docs
 - mkdocs-material
 
-## TODO
-- Actions workflows.
 

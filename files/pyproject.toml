@@ -27,20 +27,26 @@ docs = [
 	"mkdocstrings[python] >=?, <",
 ]
 dev = [
-	"black >=?, <",
-	"flake8 >=?, <",
-	"isort >=?, <",
-    "pydocstyle[toml] >=?, <",
+	"ruff >=?, <",
 ]
 
-[tool.black]
+[tool.ruff]
+target-version = "py312"
 line-length = 79
-target-version = [""]
-skip-string-normalization = true
+fix = true
 
-[tool.isort]
-profile = "black"
+[tool.ruff.lint]
+fixable = ["ALL"]
 
-[tool.pydocstyle]
-inherit = false
-ignore = "D100,D107,D213,D203,D405,D406,D407,D413"
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["E402"]
+"**/{tests,docs,tools}/*" = ["E402"]
+
+[tool.ruff.lint.flake8-quotes]
+docstring-quotes = "double"

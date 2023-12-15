@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
-set -x
-set -e
+source scripts/scaffolding.sh
 
-PREFIX=''
 
-[[ -z "$GITHUB_ACTIONS" ]] && PREFIX='docker compose run --rm --no-deps python -m' 
-
-${PREFIX} ruff check .
+${PREFIX}python -m ruff check .

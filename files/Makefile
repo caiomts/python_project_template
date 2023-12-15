@@ -15,5 +15,8 @@ down:
 test: all
 	bash scripts/test.sh
 
+format: all
+	bash scripts/format.sh
+
 docs: up
 	bash scripts/preview_docs.sh

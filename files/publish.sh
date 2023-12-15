@@ -1,9 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
+source scripts/scaffolding.sh
 
-PREFIX=''
-
-[[ -z "$GITHUB_ACTIONS" ]] && PREFIX='docker compose run --rm --no-deps python -m' 
-
-${PREFIX} flit publish
+${PREFIX}python -m flit publish

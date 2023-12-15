@@ -1,8 +1,10 @@
+export COMPOSE_DOCKER_CLI_BUILD=1
+export DOCKER_BUILDKIT=1
+ENV FLIT_ROOT_INSTALL=1
+
 FROM python:3-slim-bullseye
 
 RUN pip install --no-cache-dir --upgrade pip flit
-
-ENV FLIT_ROOT_INSTALL=1
 
 WORKDIR /src
 
